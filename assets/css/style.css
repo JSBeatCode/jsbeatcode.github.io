@@ -1285,6 +1285,8 @@ section {
 } */
 
 #mapskip-icon-button {
+  width: 50px;
+  height: 50px;
   text-align: center;
   color: darkorchid;
   transition: color 0.5s ease-in-out;
