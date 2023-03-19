@@ -1296,10 +1296,18 @@ section {
   color: hotpink;
 }
 
+#mapskipindicator {
+  position:relative;
+  left:10%;
+  font-size: 9px;
+  color: darkgray;
+  text-align: center
+}
+
 
 #kakaomapicon {
   text-align: center;
-  
+
 }
 
 #navermapicon {
@@ -1316,8 +1324,20 @@ section {
   justify-content: center;
 }
 
-#contactinfo {
+#contactinfo-txt {
+  text-align: right;
+  margin-block: 10px;
+}
+
+#contactinfo-icon {
   text-align: center;
   margin-block: 10px;
+}
 
+#maptarget {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 5px;
 }
