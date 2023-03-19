@@ -236,9 +236,9 @@
                     </div>
               
                   </div>
-                  <div style="opacity: 0.7; color: antiquewhite" class="swiper-button-prev"></div>
-                  <div style="opacity: 0.7; color: antiquewhite" class="swiper-button-next"></div>
-                  <div style="opacity: 0.7; color: antiquewhite" class="swiper-pagination"></div>
+                  <div id="swipebtn" class="swiper-button-prev"></div>
+                  <div id="swipebtn" class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
@@ -286,8 +286,8 @@
               <div id="maplocation" class="maplocation"></div>
               <div class="map" id="map" style="width:100%;height:400px;">
                 <a id="maptarget" class="btn maptarget" onclick="mapMoveToWeddingHalls(event)">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"
+                    style="fill: hotpink">
                     <circle cx="12" cy="12" r="3"></circle>
                     <path
                       d="M13 4.069V2h-2v2.069A8.008 8.008 0 0 0 4.069 11H2v2h2.069A8.007 8.007 0 0 0 11 19.931V22h2v-2.069A8.007 8.007 0 0 0 19.931 13H22v-2h-2.069A8.008 8.008 0 0 0 13 4.069zM12 18c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z">
@@ -322,7 +322,7 @@
                         <img src="assets/img/weddings/kakaomap.png" alt="" width="50px" height="50px"/>
                       </a>
                     </div>
-                      <div class="col" style="font-size: 10px;">티맵</div>
+                      <div class="col" style="font-size: 10px;">카카오</div>
                     </div>                  
                     <div class="col-3" id="navermapicon">
                       <div class="col">
@@ -338,7 +338,7 @@
                           <img src="assets/img/weddings/tmap.png" alt="" width="50px" height="50px"/>
                         </a>
                       </div>
-                      <div class="col" style="font-size: 10px;">카카오</div>
+                      <div class="col" style="font-size: 10px;">티맵</div>
                     </div>
                 </div>
               </p>
@@ -361,17 +361,11 @@
           </div>
         </div>
     
-        <div class="row">
+        <div id="calendar-div" class="row justify-content-center align-items-center">
           <div class="col">
-            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-             padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-             border-radius: 8px; will-change: transform;">
-              <iframe loading="lazy"
-                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFdpEyLX24&#x2F;view?embed" allowfullscreen="allowfullscreen"
-                allow="fullscreen">
-              </iframe>
-            </div>
+            <a href="assets/img/weddings/calendar.jpg" data-gallery="portfolioGallery3" class="portfolio-lightbox3">
+              <img src="assets/img/weddings/calendar.jpg" class="img-fluid" alt="">
+            </a>
           </div>
         </div>
     </section>

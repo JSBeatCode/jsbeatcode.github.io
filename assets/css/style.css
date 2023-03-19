@@ -1341,3 +1341,16 @@ section {
   z-index: 1000;
   padding: 5px;
 }
+
+#calendar-div {
+  border: 1px solid lightcoral;
+  padding: 10px;
+  background-color: lightcoral;
+}
+
+#swipebtn {
+  background-color: beige;
+  opacity: 0.5;
+  color: darkgrey;
+  border-radius: 20%;
+}

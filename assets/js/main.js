@@ -236,33 +236,61 @@
     },
   });
 
-    /**
-   * Initiate portfolio lightbox 2
+  /**
+ * Initiate portfolio lightbox 2
+ */
+  const portfolioLightbox2 = GLightbox({
+    selector: '.portfolio-lightbox2'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
    */
-    const portfolioLightbox2 = GLightbox({
-      selector: '.portfolio-lightbox2'
-    });
-  
-    /**
-     * Initiate portfolio details lightbox 
-     */
-    const portfolioDetailsLightbox2 = GLightbox({
-      selector: '.portfolio-details-lightbox2',
-      width: '90%',
-      height: '90vh'
-    });
-  
-    /**
-     * Portfolio details slider
-     */
-    new Swiper('.portfolio-details-slider2', {
-      speed: 400,
-      // loop: true,
-      // autoplay: {
-      //   delay: 5000,
-      //   disableOnInteraction: false
-      // },
-    });
+  const portfolioDetailsLightbox2 = GLightbox({
+    selector: '.portfolio-details-lightbox2',
+    width: '90%',
+    height: '90vh'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider2', {
+    speed: 400,
+    // loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+  });
+
+  /**
+ * Initiate portfolio lightbox 3
+ */
+  const portfolioLightbox3 = GLightbox({
+    selector: '.portfolio-lightbox3'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox3 = GLightbox({
+    selector: '.portfolio-details-lightbox3',
+    width: '90%',
+    height: '90vh'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider3', {
+    speed: 400,
+    // loop: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+  });  
 
   /**
    * Testimonials slider
