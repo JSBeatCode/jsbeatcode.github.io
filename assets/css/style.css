@@ -1273,13 +1273,48 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 10px;
   border: 1px solid darkorchid;
+  transition: border-color 0.5s ease-in-out; */
 }
+
+/* #mapskip-icon:hover {
+  border: 1px solid hotpink;
+} */
 
 #mapskip-icon-button {
   text-align: center;
-  color: darkorchid
+  color: darkorchid;
+  transition: color 0.5s ease-in-out;
+}
+
+#mapskip-icon-button:hover {
+  color: hotpink;
+}
+
+
+#kakaomapicon {
+  text-align: center;
+}
+
+#navermapicon {
+  text-align: center;
+}
+
+#tmapicon {
+  text-align: center;
+}
+
+.centermiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactinfo {
+  text-align: center;
+  margin-block: 10px;
+
 }
