@@ -237,16 +237,16 @@
               
                   </div>
                   <div 
-                    style="  background-color: beige; opacity: 0.5; color: darkgrey; border-radius: 20%;" 
+                    style="left:0; background-color: #555; opacity: 0.5; color: beige; border-radius: 20%;" 
                     class="swiper-button-prev"
                   ></div>
                   <div 
-                    style="  background-color: beige; opacity: 0.5; color: darkgrey; border-radius: 20%;" 
+                    style="right:0; background-color: #555; opacity: 0.5; color: beige; border-radius: 20%;" 
                     class="swiper-button-next"
                   ></div>
                   <!-- <div id="swipebtn" class="swiper-button-prev"></div> -->
                   <!-- <div id="swipebtn" class="swiper-button-next"></div> -->
-                  <div class="swiper-pagination"></div>
+                  <div id="swipterpagination" class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@
                 <div class="col-auto" id="mapskipdown">
                   <div class="col" id="mapskipindicator">아래로</div>
                   <div class="col" id="mapskip-icon">
-                    <button class="btn" id="mapskip-icon-button" href="#map" onclick="gotoScroll(event, 'maplocation')">
+                    <button class="btn" id="mapskip-icon-button" onclick="gotoScroll(event, 'maplocation')">
                       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -291,7 +291,6 @@
                   </div>
                 </div>
               </div>
-              <div id="maplocation" class="maplocation"></div>
               <div class="map" id="map" style="width:100%;height:400px;">
                 <a id="maptarget" class="btn maptarget" onclick="mapMoveToWeddingHalls(event)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"
@@ -303,11 +302,12 @@
                   </svg>
                 </a>
               </div>
+              <div id="maplocation" class="maplocation"></div>
               <div class="row justify-content-between">
                 <div class="col-auto mr-auto"></div>
                 <div class="col-auto" id="mapskipup">
                   <div class="col" id="mapskip-icon">
-                    <button class="btn" id="mapskip-icon-button" href="#resume" onclick="gotoScroll(event, 'resume')">
+                    <button class="btn" id="mapskip-icon-button" onclick="gotoScroll(event, 'swipterpagination')">
                       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -380,6 +380,97 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal-shinrang">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">신랑측 마음전달</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body container">
+              <div class="row">
+                <div class="col-sm">
+                  oo은행 (예금주: 조택종)
+                  <div class="input-group mb-3">
+                    <input id="shinrang-account-01" type="text" readonly class="form-control" value="111-1111-11-11">
+                    <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinrang-account-01')">복사</button>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm">
+                  oo은행 (예금주: 강정자)
+                  <div class="input-group mb-3">
+                    <input id="shinrang-account-02" type="text" readonly class="form-control" value="111-1111-11-12">
+                    <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinrang-account-02')">복사</button>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm">
+                  oo은행 (예금주: 조승동)
+                  <div class="input-group mb-3">
+                    <input id="shinrang-account-03" type="text" readonly class="form-control" value="111-1111-11-13">
+                    <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinrang-account-03')">복사</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="myModal-shinbu">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">신부측 마음전달</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body container">
+              <div class="row">
+                <div class="col-sm">
+                  oo은행 (예금주: 이옥임)
+                  <div class="input-group mb-3">
+                    <input id="shinbu-account-01" type="text" readonly class="form-control" value="111-1111-11-14">
+                    <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinbu-account-01')">복사</button>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-sm">
+                  oo은행 (예금주: 이슬기)
+                  <div class="input-group mb-3">
+                    <input id="shinbu-account-02" type="text" readonly class="form-control" value="111-1111-11-15">
+                    <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinbu-account-02')">복사</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -387,29 +478,6 @@
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
         </div>
 
-        <div class="row mt-1">
-          <div class="col-lg-4">
-            <!-- <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Message:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div> -->
-
-            </div>
-          </div>
           <div class="row">
             <div id="contactinfo-txt" class="col">
               <span style="color:cornflowerblue">신랑</span>에게 연락하기
@@ -421,6 +489,14 @@
                     d="M16.75 2h-10c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-10 18V4h10l.002 16H6.75z">
                   </path>
                   <circle cx="11.75" cy="18" r="1"></circle>
+                </svg>
+              </a>
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinrang">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill: cornflowerblue">
+                  <path
+                    d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z">
+                  </path>
                 </svg>
               </a>
             </div>
@@ -437,11 +513,17 @@
                   <circle cx="11.75" cy="18" r="1"></circle>
                 </svg>
               </a>
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinbu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  style="fill: hotpink">
+                  <path
+                    d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z">
+                  </path>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="row">
-            신랑신부 혼주 연락처 공사중
-          </div>
+
         </div>
       </div>
     </section><!-- End Contact Section -->
@@ -485,7 +567,7 @@
       map.setCenter(weddingHalls);
     }
 
-    let scrollTop = 0;
+    // let scrollTop = 0;
 
     function gotoScroll(event, loc) {
       event.preventDefault();
@@ -512,9 +594,16 @@
       location.href = `/index.html#${loc}`; 
     }
 
-    window.addEventListener('scroll', function() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    });
+    function copyText(target) {
+      var copyText = document.getElementById(target);
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("복사되었습니다: " + copyText.value);
+    }
+    // window.addEventListener('scroll', function() {
+    //   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // });
   </script>
 
   <!-- Vendor JS Files -->

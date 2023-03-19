@@ -1354,3 +1354,8 @@ section {
   color: darkgrey;
   border-radius: 20%;
 }
+
+#accountbtn {
+  background-color: lightcoral;
+  color: bisque
+}
