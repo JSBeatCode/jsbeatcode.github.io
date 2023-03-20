@@ -1325,8 +1325,11 @@ section {
 }
 
 #contactinfo-txt {
-  text-align: right;
+  /* text-align: right; */
   margin-block: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #contactinfo-icon {
