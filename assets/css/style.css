@@ -1346,9 +1346,9 @@ section {
 }
 
 #calendar-div {
-  border: 1px solid lightcoral;
+  border: 1px solid lightpink;
   padding: 10px;
-  background-color: lightcoral;
+  background-color: lightpink;
 }
 
 #swipebtn {
