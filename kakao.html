@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kakao Scrap Share Example</title>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <style>
+        #kakao-scrap-btn {
+            background: url('https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg') top right no-repeat;
+        }
+    </style>
+</head>
+<body>
+	<div id="kakao-scrap-btn">공유보내기</div>
+	<script>
+        const APP_KEY = '37bf26172ac96c2e1bfd93aedce02d69'
+        const YOUR_TEMPLATE_ID = 91730;
+
+		Kakao.init(APP_KEY);
+		Kakao.Link.createScrapButton({
+			container: '#kakao-scrap-btn',
+			requestUrl: 'https://developers.kakao.com',
+			templateId: YOUR_TEMPLATE_ID,
+            success: function(authObj) {
+                console.log(JSON.stringify(authObj));
+				alert(JSON.stringify(authObj));
+			},
+			fail: function(err) {
+				console.log(JSON.stringify(err));
+				alert(JSON.stringify(err));
+			}
+		});
+	</script>
+</body>
+</html>
