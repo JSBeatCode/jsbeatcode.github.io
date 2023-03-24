@@ -1,35 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Kakao Scrap Share Example</title>
-	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Kakao Scrap Share Example</title>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <style>
-        #kakao-scrap-btn {
-            background: url('https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg') top right no-repeat;
+        div.kakao-share-button {
+            position: absolute;
+            display: inline-block;
+            background-color: #FEE500;
+            color: #3C1E1E;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+            box-shadow: 0px 2px 2px #BDBDBD;
         }
+
+        div.kakao-share-button:hover {
+            position: absolute;
+            background-color: #FCD800;
+            box-shadow: 0px 4px 4px #BDBDBD;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        /* 카카오 버튼 전체 스타일 */
+        /* .kakao-btn {
+            display: inline-block;
+            position: relative;
+            width: 220px;
+            height: 50px;
+            background-color: #FEE500;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            cursor: pointer;
+        } */
+
+        /* 아이콘 스타일 */
+        /* .kakao-btn .icon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-image: url(카카오-아이콘-이미지-URL);
+            background-size: contain;
+        } */
+
+        /* 텍스트 스타일 */
+        /* .kakao-btn .text {
+            display: inline-block;
+            position: relative;
+            padding: 0 10px;
+            line-height: 50px;
+        } */
     </style>
 </head>
-<body>
-	<div id="kakao-scrap-btn">공유보내기</div>
-	<script>
-        const APP_KEY = '37bf26172ac96c2e1bfd93aedce02d69'
-        const YOUR_TEMPLATE_ID = 91730;
 
-		Kakao.init(APP_KEY);
-		Kakao.Link.createScrapButton({
-			container: '#kakao-scrap-btn',
-			requestUrl: 'https://developers.kakao.com',
-			templateId: YOUR_TEMPLATE_ID,
-            success: function(authObj) {
-                console.log(JSON.stringify(authObj));
-				alert(JSON.stringify(authObj));
-			},
-			fail: function(err) {
-				console.log(JSON.stringify(err));
-				alert(JSON.stringify(err));
-			}
-		});
-	</script>
+<body>
+    <!-- <div class="kakao-btn"> -->
+        <!-- <span class="icon"></span> -->
+        <!-- <span class="text">카카오로 로그인</span> -->
+    <!-- </div> -->
+        <div class="wrapper">
+            <div class="kakao-share-button" id="kakao-scrap-btn" onclick="sendShare()">공유보내기</div>
+        </div>
+    <script>
+        const APP_KEY = '37bf26172ac96c2e1bfd93aedce02d69'
+        const TEMPLATE_ID = 91730;
+        Kakao.init(APP_KEY);
+        function sendShare() {
+            Kakao.Share.sendCustom({
+                templateId: TEMPLATE_ID,
+                templateArgs: {
+                    title: '제목 영역입니다.',
+                    description: '설명 영역입니다.',
+                },
+            });
+        }
+
+    </script>
 </body>
+
 </html>
