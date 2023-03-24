@@ -1210,7 +1210,8 @@ section {
 }
 
 .invitation-note-1 {
-  font-size: 1.0rem;
+  font-size: 1.8rem;
+  font-family: 'East Sea Dokdo', cursive;
 }
 
 .invitation-note-2 {
@@ -1361,4 +1362,12 @@ section {
 #accountbtn {
   background-color: lightcoral;
   color: bisque
+}
+
+#mainnote {
+  font-family: 'Stylish', sans-serif;
+}
+
+#lovelytype {
+  font-family: 'Single Day', cursive;
 }
