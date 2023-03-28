@@ -1365,9 +1365,13 @@ section {
 }
 
 #mainnote {
-  font-family: 'Stylish', sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
 }
 
 #lovelytype {
   font-family: 'Single Day', cursive;
+}
+
+#normaltype {
+  font-family: 'Gowun Dodum', sans-serif;
 }

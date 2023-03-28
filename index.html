@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>슬기♥승동모바일청첩장</title>
+  <title>승동♥슬기모바일청첩장</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,10 +69,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 id="mainnote">아름다운 <span style="color: hotpink">당신</span>을</h1>
+      <h1 id="mainnote">승동 슬기의 <span style="color: hotpink">결혼식</span>에</h1>
       <!-- <h1>저희 <span style="color: darksalmon">결혼식</span>에</h1> -->
       
-      <p style="font-family: 'Stylish', sans-serif; font-size: 1.4rem;">초대합니다. <span style="font-size: 1.2rem;" class="typed" data-typed-items="가양역 더챗플앳웨스트, 6/24 14:00"></span></p>
+      <p style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.4rem;">초대합니다. <span style="font-size: 1.2rem;" class="typed" data-typed-items="가양역 더챗플앳웨스트, 6/24 14:00"></span></p>
       <div class="social-links">
 
       </div>
@@ -98,8 +98,8 @@
           <p class="invitation-note-1">앞날을 축복하고 기도해주시면</p>
           <p class="invitation-note-1">감사하겠습니다.</p>
           <br>
-          <p><span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.4rem; font-weight: bold;">조택종 · 강정자</span>의 차남</span>&nbsp;&nbsp;<span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.6rem; font-weight: bold;">조승동</span></p>
-          <p><span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.4rem; font-weight: bold;">이옥임</span>의 장녀</span>&nbsp;&nbsp;<span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.6rem; font-weight: bold;">이슬기</span></p>
+          <p><span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.4rem; font-weight: bold;">조택종 · 강정자</span>의 차남</span>&nbsp;&nbsp;<span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.4rem; font-weight: bold;">조승동</span></p>
+          <p><span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.4rem; font-weight: bold;">이옥임</span>의 장녀</span>&nbsp;&nbsp;<span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.4rem; font-weight: bold;">이슬기</span></p>
           
         </div>
 
@@ -276,13 +276,13 @@
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
         </div>
     
-        <span id="lovelytype" class="resume-title">예식장</span>
+        <span id="normaltype" class="resume-title">예식장</span>
         <div class="row">
           <div class="col-lg-12">
             <div class="resume-item pb-0">    
               <div class="row justify-content-between" style="margin-top: 15p; margin-bottom: 15px">    
                 <div class="col-auto mr-auto centermiddle">
-                  <a id="lovelytype" style="color: hotpink; font-size: 1.2rem" href="http://kko.to/-AXGBoEECe">
+                  <a id="normaltype" style="color: hotpink; font-size: 1.2rem" href="http://kko.to/-AXGBoEECe">
                     <i class="bi bi-house-door"></i> 더챗플앳웨스트
                   </a>
                 </div>
@@ -308,10 +308,10 @@
                   
                 </div>
               </div>
-              <p id="lovelytype"><i style="color: #edb6f2" class="bi bi-geo-alt"></i> 서울 강서구 양천로 476 (등촌동
+              <p id="normaltype"><i style="color: #edb6f2" class="bi bi-geo-alt"></i> 서울 강서구 양천로 476 (등촌동
                 73-1)</p>
-              <p id="lovelytype"><i style="color: #edb6f2" class="bi bi-telephone"></i> 02-2692-1121</p>
-              <p id="lovelytype"><i style="color: #edb6f2" class="bi bi-map"></i>
+              <p id="normaltype"><i style="color: #edb6f2" class="bi bi-telephone"></i> 02-2692-1121</p>
+              <p id="normaltype"><i style="color: #edb6f2" class="bi bi-map"></i>
                 가양역10번출구 7층 (롯데시내마 건물)
                 <div class="row justify-content-center">                
                   <div class="col-3" id="kakaomapicon">
@@ -595,6 +595,28 @@
     // window.addEventListener('scroll', function() {
     //   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     // });
+    window.onload = function() {
+      // 페이지의 모든 로딩이 끝나면 실행할 코드 작성
+      console.log('onload', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
+      const onloadTimeout = setTimeout(() => {
+        
+        location.href = '#about'
+        
+        clearTimeout(onloadTimeout);
+
+      }, 8000);
+
+    };
+
+    // window.addEventListener('load', function() {
+    //   console.log('addEventListener', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
+    // });
+
+    // window.addEventListener('DOMContentLoaded', function() {
+    //     console.log('DOMContentLoaded', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
+    // });
+
+
   </script>
 
   <!-- Vendor JS Files -->

@@ -37,54 +37,18 @@
         }
 
 
-        /* 카카오 버튼 전체 스타일 */
-        /* .kakao-btn {
-            display: inline-block;
-            position: relative;
-            width: 220px;
-            height: 50px;
-            background-color: #FEE500;
-            border-radius: 4px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            color: #000000;
-            cursor: pointer;
-        } */
-
-        /* 아이콘 스타일 */
-        /* .kakao-btn .icon {
-            position: absolute;
-            top: 50%;
-            left: 12px;
-            transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
-            background-image: url(카카오-아이콘-이미지-URL);
-            background-size: contain;
-        } */
-
-        /* 텍스트 스타일 */
-        /* .kakao-btn .text {
-            display: inline-block;
-            position: relative;
-            padding: 0 10px;
-            line-height: 50px;
-        } */
     </style>
 </head>
 
 <body>
-    <!-- <div class="kakao-btn"> -->
-        <!-- <span class="icon"></span> -->
-        <!-- <span class="text">카카오로 로그인</span> -->
-    <!-- </div> -->
         <div class="wrapper">
             <div class="kakao-share-button" id="kakao-scrap-btn" onclick="sendShare()">공유보내기</div>
         </div>
     <script>
+        // 템플릿 ID랑 javascript 앱키를 소스에 적용 필요
         const APP_KEY = '37bf26172ac96c2e1bfd93aedce02d69'
         const TEMPLATE_ID = 91730;
+        
         Kakao.init(APP_KEY);
         function sendShare() {
             Kakao.Share.sendCustom({
