@@ -50,7 +50,10 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <!-- <i class="bi bi-list mobile-nav-toggle d-lg-none"></i> -->
+  <!-- <a href="#" onclick="toggleNavBar()"> -->
+    <!-- <i class="bi bi-list mobile-nav-toggle d-lg-none" onclick="toggleNavBar()"></i> -->
+    <!-- </a> -->
+    <a class="bi bi-list mobile-nav-toggle" onclick="toggleNavBar()"></a>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
@@ -397,7 +400,7 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">신랑측 마음전달</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="showNavBar()"></button>
             </div>
       
             <!-- Modal body -->
@@ -445,7 +448,7 @@
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">신부측 마음전달</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="showNavBar()"></button>
             </div>
       
             <!-- Modal body -->
@@ -501,7 +504,7 @@
                   <circle cx="11.75" cy="18" r="1"></circle>
                 </svg>
               </a>
-              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinrang">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinrang" onclick="hideNavBar()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                   style="fill: cornflowerblue">
                   <path
@@ -526,7 +529,7 @@
                   <circle cx="11.75" cy="18" r="1"></circle>
                 </svg>
               </a>
-              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinbu">
+              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinbu" onclick="hideNavBar()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                   style="fill: hotpink">
                   <path
@@ -623,6 +626,17 @@
       }, 5000);
     };
 
+    function hideNavBar() {
+      navbar.classList.remove('active');
+    }
+
+    function showNavBar() {
+      navbar.classList.add('active');
+    }
+
+    function toggleNavBar(){
+      navbar.classList.contains('active') ? hideNavBar() : showNavBar();
+    }
 
     // document.addEventListener('mousemove', (event) => {
     //     if (event.clientX < 50) { // 마우스 왼쪽 사이드에 있을 때
