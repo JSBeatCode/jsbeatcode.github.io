@@ -128,12 +128,12 @@ h6 {
 }
 
 @media (max-width: 991px) {
-  #header {
+  /* #header {
     width: 300px;
     background: #fff;
     border-right: 1px solid #e6e9ec;
     left: -300px;
-  }
+  } */
 }
 
 @media (min-width: 991px) {
@@ -174,9 +174,9 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  /* background: #f2f3f5; */
   height: 56px;
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
   transition: 0.3s;
 }
@@ -210,21 +210,21 @@ h6 {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: #fff;
-  background: #edb6f2;
+  color: deeppink;
+  /* background: #edb6f2; */
 }
 
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover>a span {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover>a {
-  width: 100%;
-  color: #fff;
+  /* width: 100%; */
+  /* color: #fff; */
 }
 
 .nav-menu a:hover span,
@@ -268,6 +268,19 @@ h6 {
   background-color: #edb6f2;
 }
 
+#navbar {
+  position: fixed;
+  top: 25%;
+  left: -200px; /* navbar 숨김 */
+  width: 50px;
+  /* height: 100%; */
+  /* background-color: #333; */
+  transition: left 0.3s ease-in-out;
+}
+
+#navbar.active {
+  left: 0; /* navbar 나타남 */
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -298,7 +311,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0;
+  margin: 3;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -529,6 +542,7 @@ section {
   margin-top: -2px;
   border-left: 2px solid #edb6f2;
   position: relative;
+  margin-left: 15px;
 }
 
 .resume .resume-item h4 {
@@ -735,6 +749,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
+  margin-left: 15px;
   padding-top: 40px;
 }
 
@@ -1341,7 +1356,7 @@ section {
 #maptarget {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1000;
   padding: 5px;
 }

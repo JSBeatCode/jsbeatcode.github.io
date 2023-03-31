@@ -50,27 +50,36 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- <i class="bi bi-list mobile-nav-toggle d-lg-none"></i> -->
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>머리글</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto"><i class="bx bx-home"></i></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-pencil"></i></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-photo-album"></i></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-map-pin"></i></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i></a></li>
+
+        <!-- <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>머리글</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-pencil"></i> <span>초대</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-photo-album"></i> <span>촬영</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-map-pin"></i> <span>가는길</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>연락</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>연락</span></a></li> -->
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
+    <!-- .nav-menu -->
 
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 id="mainnote">특별한 날, 저희 <span style="color: hotpink">결혼</span>을</h1>
-<h1 id="mainnote">축복해 주시면 감사합니다.</h1>
+      <h1 id="mainnote">저희의 <span style="color: hotpink">결혼식</span>을</h1>
+      <h1 id="mainnote">축복해 주시면</h1>
+      <h1 id="mainnote">감사하겠습니다.</h1>
 <!--
 <h1 id="mainnote">저희의
 <span style="color: hotpink">결혼식</span>
@@ -250,11 +259,19 @@
               
                   </div>
                   <div 
-                    style="left:0; background-color: #555; opacity: 0.5; color: beige; border-radius: 20%;" 
+                    style="left: 0; 
+                    background-color: #555; 
+                    opacity: 0.5; 
+                    color: beige; 
+                    border-radius: 20%;"
                     class="swiper-button-prev"
                   ></div>
                   <div 
-                    style="right:0; background-color: #555; opacity: 0.5; color: beige; border-radius: 20%;" 
+                    style="right: 0; 
+                    background-color: #555; 
+                    opacity: 0.5; 
+                    color: beige; 
+                    border-radius: 20%;" 
                     class="swiper-button-next"
                   ></div>
                   <!-- <div id="swipebtn" class="swiper-button-prev"></div> -->
@@ -280,7 +297,6 @@
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
         </div>
     
-        <span id="normaltype" class="resume-title">예식장</span>
         <div class="row">
           <div class="col-lg-12">
             <div class="resume-item pb-0">    
@@ -474,7 +490,7 @@
 
           <div class="row">
             <div id="contactinfo-txt" class="col">
-<span style="font-family: 'Single Day', cursive; font-size: 1.2rem; text-align: center; margin-right: 10px;">
+<span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.2rem; text-align: center; margin-right: 10px;">
               <span style="color:cornflowerblue">신랑</span>에게 연락하기
 </span>
 
@@ -499,7 +515,7 @@
             </div>
             <div class="w-100"></div>
             <div id="contactinfo-txt" class="col">
-<span style="font-family: 'Single Day', cursive; font-size: 1.2rem; text-align: center; margin-right: 10px;">
+<span style="font-family: 'Gowun Dodum', sans-serif; font-size: 1.2rem; text-align: center; margin-right: 10px;">
               <span style="color:hotpink">신부</span>에게 연락하기
 </span>
 
@@ -532,7 +548,7 @@
 
  <footer id="footer">
     <div class="container">
-      <div id="lovelytype" class="copyright">
+      <div id="normaltype" class="copyright">
 본 초대장은 조승동(제작), 이슬기(디자인가이드) 예비부부가 직접 만들었습니다. 이쁘게 봐주세요 😄😁
       </div>
     </div>
@@ -596,31 +612,33 @@
       document.execCommand("copy");
       alert("복사되었습니다: " + copyText.value);
     }
-    // window.addEventListener('scroll', function() {
-    //   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    // });
+
+    const navbar = document.getElementById('navbar');
+
     window.onload = function() {
       // 페이지의 모든 로딩이 끝나면 실행할 코드 작성
       console.log('onload', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
       const onloadTimeout = setTimeout(() => {
-        
-        location.href = '#about'
-        
+        // location.href = '#about'
+        navbar.classList.add('active');
         clearTimeout(onloadTimeout);
-
-      }, 8000);
-
+      }, 5000);
     };
 
-    // window.addEventListener('load', function() {
-    //   console.log('addEventListener', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
+
+    // document.addEventListener('mousemove', (event) => {
+    //     if (event.clientX < 50) { // 마우스 왼쪽 사이드에 있을 때
+    //         navbar.classList.add('active');
+    //     } else {
+    //         navbar.classList.remove('active');
+    //     }
     // });
 
-    // window.addEventListener('DOMContentLoaded', function() {
-    //     console.log('DOMContentLoaded', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
-    // });
-
-
+    // document.addEventListener('click', (event) => {
+    //   console.log(event.clientY, event.clientX);
+    //   var scrollPosition = window.pageYOffset;
+    //   console.log("현재 스크롤 위치: " + scrollPosition);
+    // })
   </script>
 
   <!-- Vendor JS Files -->

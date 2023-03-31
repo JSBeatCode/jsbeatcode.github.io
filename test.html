@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: -200px; /* navbar 숨김 */
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            transition: left 0.3s ease-in-out;
+          }
+          
+          #navbar.active {
+            left: 0; /* navbar 나타남 */
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <nav id="navbar">
+            <!-- navbar 내용 -->
+          </nav>
+    </div>
+
+    <script>
+const navbar = document.getElementById('navbar');
+
+document.addEventListener('mousemove', (event) => {
+  if (event.clientX < 100) { // 마우스 왼쪽 사이드에 있을 때
+    navbar.classList.add('active');
+  } else {
+    navbar.classList.remove('active');
+  }
+});
+
+// document.addEventListener('mouseleave', () => {
+//   navbar.classList.remove('active'); // 마우스가 화면을 벗어나면 navbar 숨김
+// });
+
+    </script>
+</body>
+</html>
