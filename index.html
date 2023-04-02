@@ -622,7 +622,8 @@
  <footer id="footer">
     <div class="container">
       <div id="normaltype" class="copyright">
-        The creators of this invitation are a blessed pair, Seungdong Cho and Seulgi Lee, who will soon become a married couple.
+        <!-- The creators of this invitation are a blessed pair, Seungdong Cho and Seulgi Lee, who will soon become a married couple. -->
+본 초대장은 예비신랑 조승동 제작, 예비신부 이슬기가 디자인 하였습니다.
       </div>
     </div>
   </footer>
@@ -649,33 +650,6 @@
     function mapMoveToWeddingHalls(event) {
       event.preventDefault();
       map.setCenter(weddingHalls);
-    }
-
-    // let scrollTop = 0;
-
-    function gotoScroll(event, loc) {
-      event.preventDefault();
-
-      const timeout = setTimeout(() => {
-        executeScroll(loc)
-        .then((location) => {
-          scrollCallback(location);
-        })
-        .catch(() => {
-          scrollCallback(loc);
-        }).finally(() => {
-          clearTimeout(timeout);
-        });
-      }, 150) 
-    }
-
-    async function executeScroll(loc){
-      location.href = `/index.html#${loc}`;
-      return loc;
-    }
-
-    async function scrollCallback(loc) {
-      location.href = `/index.html#${loc}`; 
     }
 
     function copyText(target) {
