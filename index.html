@@ -115,7 +115,7 @@
               조택종 · 강정자
             </span>
             의 차남&nbsp;&nbsp;
-            <span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.4em; font-weight: bold;">
+            <span style="font-size:1.4em; font-weight: bold;">
               조승동
             </span>
           </p>
@@ -124,7 +124,7 @@
               이옥임
             </span>
             의 장녀&nbsp;&nbsp;
-            <span style="font-family: 'Gowun Dodum', sans-serif; font-size:1.4em; font-weight: bold;">
+            <span style="font-size:1.4em; font-weight: bold;">
               이슬기
             </span>
           </p>
@@ -145,7 +145,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 id="mainnote">겔러리</h2>
+          <h2 id="mainnote">갤러리</h2>
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
         </div>
         
@@ -164,7 +164,7 @@
                       </a>
                     </div>
         
-                    <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="swiper-slide">
                       <a href="assets/img/weddings/02.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="">
                         <img src="assets/img/weddings/02.jpg" alt="">
                       </a>
@@ -328,10 +328,12 @@
             <div class="resume-item pb-0">    
               <div class="row justify-content-between" style="margin-top: 15p; margin-bottom: 15px">    
                 <div class="col-auto mr-auto centermiddle">
-                  <a id="normaltype" style="color: hotpink; font-size: 1.2rem" href="http://kko.to/-AXGBoEECe">
+                  <a id="normaltype" style="color: hotpink; font-size: 1.2em" href="http://kko.to/-AXGBoEECe">
                     <i class="bi bi-house-door"></i> 더채플앳웨스트
                   </a>
+                  <span  id="normaltype"  style="color: hotpink; font-size: 1.0em">(23년 06월 24일 14시)</span>
                 </div>
+                <!-- <div><span  id="normaltype"  style="color: hotpink; font-size: 1.2rem">&nbsp;&nbsp;(23년 06월 24일 14:00)</span></div> -->
                 <div class="col-auto">
                   
                 </div>
@@ -668,13 +670,15 @@
     const navbar = document.getElementById('navbar');
 
     window.onload = function() {
-      // 페이지의 모든 로딩이 끝나면 실행할 코드 작성
-      console.log('onload', new Date().getMinutes() + ': ' + new Date().getMilliseconds())
-      const onloadTimeout = setTimeout(() => {
-        // location.href = '#about'
+      const onloadNavBarTimeout = setTimeout(() => {
         navbar.classList.add('active');
-        clearTimeout(onloadTimeout);
+        clearTimeout(onloadNavBarTimeout);
       }, 5000);
+      
+      const onloadMoveNoteTimeout = setTimeout(() => {
+        location.href = '#about'
+        clearTimeout(onloadMoveNoteTimeout);
+      }, 9000);
     };
 
     function hideNavBar() {
