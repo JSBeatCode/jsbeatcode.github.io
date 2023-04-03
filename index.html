@@ -676,7 +676,11 @@
       }, 5000);
       
       const onloadMoveNoteTimeout = setTimeout(() => {
-        location.href = '#about'
+        const scrollX = window.scrollX || window.pageXOffset;
+        const scrollY = window.scrollY || window.pageYOffset;
+        if (scrollX === 0 && scrollY === 0) {
+          location.href = '#about'
+        }
         clearTimeout(onloadMoveNoteTimeout);
       }, 9000);
     };
@@ -691,6 +695,14 @@
 
     function toggleNavBar(){
       navbar.classList.contains('active') ? hideNavBar() : showNavBar();
+    }
+
+    function showScrollPosition() {
+      var scrollX = window.scrollX || window.pageXOffset;
+      var scrollY = window.scrollY || window.pageYOffset;
+      var positionElement = document.getElementById("scrollPosition");
+      positionElement.innerHTML = "Scroll position: (" + scrollX + ", " + scrollY + ")";
+      console.log("(" + scrollX + ", " + scrollY + ")")
     }
 
     // document.addEventListener('mousemove', (event) => {
