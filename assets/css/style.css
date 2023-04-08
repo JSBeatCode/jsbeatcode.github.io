@@ -1357,6 +1357,23 @@ section {
   display: flex;
 }
 
+#contactinfo-parents {
+  margin-block: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#contactinfo-couple {
+  font-family: 'Gowun Dodum', sans-serif;
+  margin-block: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 #contactinfo-icon {
   text-align: center;
   margin-block: 10px;
@@ -1436,5 +1453,37 @@ section {
   text-align: center;
   font-size: 0.8em;
   padding-top: 15px;
+}
+
+.btn-hotpink {
+  color: #fff;
+  background-color: hotpink;
+  border-color: hotpink;
+}
+
+.btn-palevioletred {
+  color: #fff;
+  background-color: palevioletred;
+  border-color: palevioletred;
+}
+
+
+.btn-cornflowerblue {
+  color: #fff;
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+}
+
+
+.btn-royalblue {
+  color: #fff;
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+.btn-dodgerblue {
+  color: #fff;
+  background-color: dodgerblue;
+  border-color: dodgerblue;
 }
 

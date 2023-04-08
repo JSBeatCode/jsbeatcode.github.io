@@ -49,10 +49,6 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <!-- <a href="#" onclick="toggleNavBar()"> -->
-    <!-- <i class="bi bi-list mobile-nav-toggle d-lg-none" onclick="toggleNavBar()"></i> -->
-    <!-- </a> -->
     <a class="bi bi-list mobile-nav-toggle" onclick="toggleNavBar()"></a>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -64,12 +60,6 @@
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-photo-album"></i></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-map-pin"></i></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i></a></li>
-
-        <!-- <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>머리글</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-pencil"></i> <span>초대</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-photo-album"></i> <span>촬영</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-map-pin"></i> <span>가는길</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>연락</span></a></li> -->
       </ul>
     </nav>
     <!-- .nav-menu -->
@@ -95,10 +85,11 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <!-- <div id="about" class="about"> -->
+        <!-- <div class="container"> -->
+          <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <!-- <h2 id="mainnote">초대합니다</h2> -->
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
           <br>
           <p class="invitation-note-1">서로가 마주 보며 다져온 사랑을</p>
@@ -111,7 +102,7 @@
           <p class="invitation-note-1">감사하겠습니다.</p>
           <br>
           <p style="font-family: 'Gowun Dodum', sans-serif;">
-            <span style="font-size: 1.4em; font-weight: bold;">
+            <span class="invitation-note-1">
               조택종 · 강정자
             </span>
             의 차남&nbsp;&nbsp;
@@ -120,7 +111,7 @@
             </span>
           </p>
           <p style="font-family: 'Gowun Dodum', sans-serif;">
-            <span style="font-size: 1.4em; font-weight: bold;">
+            <span class="invitation-note-1">
               이옥임
             </span>
             의 장녀&nbsp;&nbsp;
@@ -138,6 +129,7 @@
         </div> -->
 
       </div>
+    <!-- </div> -->
     </section>
 
     <!-- ======= Portfolio Section ======= -->
@@ -282,26 +274,6 @@
                     class="swiper-button-next"
                   >
                 </div>
-                  <!-- <div 
-                    style="left: 0; 
-                    background-color: #555; 
-                    opacity: 0.5; 
-                    color: beige; 
-                    border-radius: 20%;"
-                    class="swiper-button-prev"
-                  >
-                </div>
-                  <div 
-                    style="right: 0; 
-                    background-color: #555; 
-                    opacity: 0.5; 
-                    color: beige; 
-                    border-radius: 20%;" 
-                    class="swiper-button-next"
-                  >
-                </div> -->
-                  <!-- <div id="swipebtn" class="swiper-button-prev"></div> -->
-                  <!-- <div id="swipebtn" class="swiper-button-next"></div> -->
                   <div id="swipterpagination" class="swiper-pagination"></div>
                 </div>
               </div>
@@ -331,10 +303,7 @@
                   <a id="normaltype" style="color: hotpink; font-size: 1.2em" href="http://kko.to/-AXGBoEECe">
                     <i class="bi bi-house-door"></i> 더채플앳웨스트
                   </a>
-                  <!-- <span  id="normaltype"  style="color: hotpink; font-size: 1.0em">(23년 06월 24일 14시)</span> -->
                 </div>
-                <!-- <div><span  id="normaltype"  style="color: hotpink; font-size: 1.2rem">&nbsp;&nbsp;(23년 06월 24일 14:00)</span></div> -->
-                <!-- <div class="col-auto"></div> -->
               </div>
               <div class="map" id="map" style="width:80%;height:320px;">
                 <a id="maptarget" class="btn maptarget" onclick="mapMoveToWeddingHalls(event)">
@@ -406,16 +375,6 @@
               <img src="assets/img/weddings/calendar.jpg" class="img-fluid" alt="">
             </a>
 </div>
-<!--
-        <div id="calendar-div" class="row justify-content-center align-items-center">
-          <div class="col">
-            <p style="text-align: center; font-family: 'Gowun Dodum', sans-serif; font-size: 1.4em; color: white; font-weight: bold;">결혼식일자: 2023년 06월 24일</p>
-            <a href="assets/img/weddings/calendar.jpg" data-gallery="portfolioGallery3" class="portfolio-lightbox3">
-              <img src="assets/img/weddings/calendar.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-        </div>
--->
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -428,29 +387,13 @@
     
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">신랑측 마음전달</h4>
+              <h4 class="modal-title">신랑에 마음전달</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="showNavBar()"></button>
             </div>
     
             <!-- Modal body -->
             <div class="modal-body container">
               <div class="row">
-                <!-- <div class="col-sm">
-                      oo은행 (예금주: 조택종)
-                      <div class="input-group mb-3">
-                        <input id="shinrang-account-01" type="text" readonly class="form-control" value="111-1111-11-11">
-                        <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinrang-account-01')">복사</button>
-                      </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-sm">
-                      oo은행 (예금주: 강정자)
-                      <div class="input-group mb-3">
-                        <input id="shinrang-account-02" type="text" readonly class="form-control" value="111-1111-11-12">
-                        <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinrang-account-02')">복사</button>
-                      </div>
-                    </div>
-                    <div class="w-100"></div> -->
                 <div class="col-sm">
                   oo은행 (예금주: 조승동)
                   <div class="input-group mb-3">
@@ -477,21 +420,13 @@
     
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">신부측 마음전달</h4>
+              <h4 class="modal-title">신부에 마음전달</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="showNavBar()"></button>
             </div>
     
             <!-- Modal body -->
             <div class="modal-body container">
               <div class="row">
-                <!-- <div class="col-sm">
-                      oo은행 (예금주: 이옥임)
-                      <div class="input-group mb-3">
-                        <input id="shinbu-account-01" type="text" readonly class="form-control" value="111-1111-11-14">
-                        <button id="accountbtn" class="btn btn-light" type="button" onclick="copyText('shinbu-account-01')">복사</button>
-                      </div>
-                    </div>
-                    <div class="w-100"></div> -->
                 <div class="col-sm">
                   oo은행 (예금주: 이슬기)
                   <div class="input-group mb-3">
@@ -521,7 +456,7 @@
         </div>
   
         <div class="row">
-          <div id="contactinfo-txt" class="col">
+          <div id="contactinfo-couple" class="col">
             <span id="accountFontStyle">
               <span style="color:cornflowerblue">신랑</span>에게 연락하기
             </span>
@@ -535,18 +470,13 @@
                   <circle cx="11.75" cy="18" r="1"></circle>
                 </svg>
               </a>
-              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinrang" onclick="hideNavBar()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                  style="fill: cornflowerblue">
-                  <path
-                    d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z">
-                  </path>
-                </svg>
+              <a type="button" class="btn btn-cornflowerblue btn-sm" data-bs-toggle="modal" data-bs-target="#myModal-shinrang" onclick="hideNavBar()">
+                마음전달
               </a>
             </span>
           </div>
           <div class="w-100"></div>
-          <div id="contactinfo-txt" class="col">
+          <div id="contactinfo-couple" class="col">
             <span id="accountFontStyle">
               <span style="color:hotpink">신부</span>에게 연락하기
             </span>
@@ -559,62 +489,86 @@
                   <circle cx="11.75" cy="18" r="1"></circle>
                 </svg>
               </a>
-              <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal-shinbu" onclick="hideNavBar()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hotpink">
-                  <path
-                    d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z">
-                  </path>
-                </svg>
+              <a type="button" class="btn btn-hotpink btn-sm" data-bs-toggle="modal" data-bs-target="#myModal-shinbu" onclick="hideNavBar()">
+                  마음전달
               </a>
             </span>
           </div>
         </div>
         <br>
         <div class="row">
-          <div id="contactinfo-txt" class="col">
+          <div id="contactinfo-parents" class="col">
             <span id="accountFontStyle">
-              신랑 · 신부 부모님에게 마음 전달하기
+              신랑 · 신부 혼주에게 마음 전달하기
             </span>
           </div>
         </div>
         <br>
-        <div class="row" id="parentsAccountInfo">
+        <!-- <div class="row" id="parentsAccountInfo">
           <div class="col" id="parentsAccountInfo-col-name">
-            <!-- <p>신랑 부(조택종)</p>
-            <p>oo은행</p> -->
             신랑 부(조택종) 우리은행 1002-034-015990 <button class="btn btn-primary btn-sm" onclick="copyAccount('541-0310-0201-010')">복사</button>
           </div>
-          <!-- <div class="col" id="parentsAccountInfo-col-account">
-            <div class="input-group mb-3">
-              <input id="shinrang-father-account" type="text" readonly class="form-control" value="541-0310-0201-010" />
-              <button class="btn btn-primary" onclick="copyText('shinrang-father-account')">복사</button>
-            </div>
-          </div> -->
           <div class="w-100"><br></div>
           <div class="col" id="parentsAccountInfo-col-name">
-            <!-- <p>신랑 모(강정자)</p>
-            <p>oo은행</p> -->
             신랑 모(강정자) oo은행 1111 <button class="btn btn-primary btn-sm" onclick="copyAccount('1111')">복사</button>
           </div>
-          <!-- <div class="col" id="parentsAccountInfo-col-account">
-            <div class="input-group mb-3">
-              <input id="shinrang-mother-account" type="hidden" readonly class="form-control" value="2222">
-              <button class="btn btn-success" onclick="copyText('shinrang-mother-account')">복사</button>
-            </div>
-          </div> -->
           <div class="w-100"><br></div>
           <div class="col" id="parentsAccountInfo-col-name">
-            <!-- <p>신부 모(이옥임)</p> 
-            <p>oo은행</p> -->
-            
             신부 모(이옥임) oo은행 2222 <button style="background-color: hotpink; color: white;" class="btn btn-sm" onclick="copyAccount('2222')">복사</button>
           </div>
-          <!-- <div class="col" id="parentsAccountInfo-col-account">
-            <div class="input-group mb-3">
-              <input id="shinbu-mother-account" type="text" readonly class="form-control" value="3333">
-              <button class="btn btn-warning" onclick="copyText('shinbu-mother-account')">복사</button>
-            </div>
-          </div> -->
+        </div> -->
+        <div class="row" id="parentsAccountInfo">
+          <div class="col">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th class="text-center" style="color: cornflowerblue">신랑 측 혼주</th>
+                  <th class="text-center" style="color: hotpink">신부 측 혼주</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <div>
+                      <div>아버지 <span style="font-weight: bold;">조택종</span></div>
+                      <div>
+                        <div>
+                          <div>우리은행(조승동)</div>
+                          <div>1002-034-015990</div>
+                        </div>
+                        <div>
+                          <button class="btn btn-secondary btn-sm" type="button" onclick="copyAccount('신랑 부 조택종', '1002034015990')">복사</button>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center">
+                    <div>
+                      <div>어머니 <span style="font-weight: bold;">이옥임</span></div>
+                      <div>OO은행</div>
+                      <div>1234-1234-1234</div>
+                      <div>
+                        <button class="btn btn-secondary btn-sm" type="button" onclick="copyAccount('신부 모 이옥임', '123412341234')">복사</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <div>
+                      <div>어머니 <span style="font-weight: bold;">강정자</span></div>
+                      <div>OO은행</div>
+                      <div>1234-1234-1234</div>
+                      <div>
+                        <button class="btn btn-secondary btn-sm" type="button" onclick="copyAccount('신랑 모 강정자', '123412341234')">복사</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -666,9 +620,9 @@
       alert("복사되었습니다: " + copyText.value);
     }
 
-    function copyAccount(account){
+    function copyAccount(name, account){
       document.execCommand("copy");
-      alert("복사되었습니다: " + account);
+      alert(name + "의 계좌가 복사되었습니다: " + account);
     }
 
     const navbar = document.getElementById('navbar');
