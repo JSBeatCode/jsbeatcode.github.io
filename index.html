@@ -87,7 +87,9 @@
     <section id="about" class="about">
       <!-- <div id="about" class="about"> -->
         <!-- <div class="container"> -->
-          <div class="container" data-aos="fade-up">
+          <div id="notelink" class="notelink"></div>
+          <div class="container">
+            <!-- <div class="container" data-aos="fade-up"> -->
 
         <div class="section-title">
           <img id="invitation-flower" src="assets/img/weddings/flower.png" class="img-fluid" alt="">
@@ -298,10 +300,11 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="resume-item pb-0">    
-              <div class="row justify-content-between" style="margin-top: 15p; margin-bottom: 15px">    
+              <div class="row justify-content-between">
+              <!-- <div class="row justify-content-between" style="margin-top: 15px; margin-bottom: 15px">     -->
                 <div class="col-auto mr-auto centermiddle">
                   <a id="normaltype" style="color: hotpink; font-size: 1.2em" href="http://kko.to/-AXGBoEECe">
-                    <i class="bi bi-house-door"></i> 더채플앳웨스트
+                    <p  style="margin-bottom: 10px;"><i class="bi bi-house-door"></i> 더채플앳웨스트</p>
                   </a>
                 </div>
               </div>
@@ -317,12 +320,12 @@
                 </a>
               </div>
               <div id="maplocation" class="maplocation"></div>
-              <div class="row justify-content-between">
+              <!-- <div class="row justify-content-between">
                 <div class="col-auto mr-auto"></div>
                 <div class="col-auto">
                   
                 </div>
-              </div>
+              </div> -->
               <p id="normaltype"><i style="color: #edb6f2" class="bi bi-geo-alt"></i> 서울 강서구 양천로 476 (등촌동 73-1)</p>
               <p id="normaltype"><i style="color: #edb6f2" class="bi bi-telephone"></i> 02-2692-1121</p>
               <p id="normaltype"><i style="color: #edb6f2" class="bi bi-map"></i> 가양역10번출구 7층 (롯데시내마 건물)</p>
@@ -638,6 +641,7 @@
         const scrollY = window.scrollY || window.pageYOffset;
         if (scrollX === 0 && scrollY === 0) {
           location.href = '#about'
+          // location.href = '#notelink'
         }
         clearTimeout(onloadMoveNoteTimeout);
       }, 10000);
