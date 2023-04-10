@@ -330,7 +330,8 @@ h6 {
 }
 
 #hero p span {
-  color: #ea94f2;
+  /* color: #ea94f2; */
+  color: hotpink;
   letter-spacing: 1px;
 }
 
