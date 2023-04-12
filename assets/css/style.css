@@ -292,7 +292,7 @@ h6 {
   width: 100%;
   height: 100vh;
   /* background: url("../img/wedd/hero-bg.jpg") top right no-repeat; */
-  background: url("../img/weddings/background.jpg") top right no-repeat;
+  background: url("../img/weddings/background-v1.jpg") top right no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1428,6 +1428,13 @@ section {
 
 #accountFontStyle {
   font-family: 'Gowun Dodum', sans-serif;
+  font-size: 1.0em;
+  text-align: center;
+  margin-right: 10px;
+}
+
+#accountFontStyle-parents {
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: 1.2em;
   text-align: center;
   margin-right: 10px;
@@ -1487,4 +1494,3 @@ section {
   background-color: dodgerblue;
   border-color: dodgerblue;
 }
-
