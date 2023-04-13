@@ -293,8 +293,10 @@ h6 {
   height: 100vh;
   /* background: url("../img/wedd/hero-bg.jpg") top right no-repeat; */
   background: url("../img/weddings/background-v2.jpg") top right no-repeat;
+  /* background-size: auto; */
   background-size: cover;
-  background-position: center;
+  /* background-position: top; */
+  background-position: 50% 18% ;
   position: relative;
 }
 
@@ -1431,6 +1433,7 @@ section {
   font-size: 1.0em;
   text-align: center;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 #accountFontStyle-parents {
