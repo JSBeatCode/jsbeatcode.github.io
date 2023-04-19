@@ -44,6 +44,20 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+.parent {
+  position: relative;
+  height: 600px;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
 </head>
 
 <body>
@@ -629,7 +643,13 @@
                 <p id="contact-center-text-small">'계좌'를 클릭하면 계좌번호를 복사할 수 있습니다.</p>
               </div>
             </div>
-      
+      <div class="parent">
+  <div class="child">
+    <!-- 자식 요소 내용 -->
+<span>내용</span>
+  </div>
+</div>
+
             <div id="contact-account-box">
               <span id="contact-text-font-default">신랑 측</span>
               <div id="contact-account-pink-box-up">
