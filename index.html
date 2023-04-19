@@ -46,16 +46,17 @@
   ======================================================== -->
 <style>
 .parenttest {
-  border:1px solid blue;
+  border: 1px solid blue;
   position: relative;
   height: 600px;
 }
 
 .childtest {
- border:1px solid red;
+  border: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 </style>
@@ -647,9 +648,7 @@
       <div class="parenttest">
   <div class="childtest">
     <!-- 자식 요소 내용 -->
-<span>
-내용 is a href of the band that has a 
-</span>
+<span>내용 is a href of the band that has a</span>
   </div>
 </div>
 
