@@ -1543,14 +1543,14 @@ section {
   position: relative;
   width: 100%;
   height: 500px;
-  background-color: #fbf3fb;
+  /* background-color: #fbf3fb; */
 }
 
 #celebration-account-col {
   position: relative;
   width: 100%;
   height: 600px;
-  background-color: #ffe6ff;
+  /* background-color: #ffe6ff; */
 }
 
 #contact-date-div-first {
