@@ -324,7 +324,7 @@
                 </div>
               </div>
               <div id="maplockicon" onclick="disableClick()">
-                <i id="lockicon" class="bi bi-unlock"></i>
+                <i id="lockicon" class="bi bi-lock"></i>
                 <!-- <svg id="lockicon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="hotpink" class="bi bi-lock" viewBox="0 0 24 24">
                   <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
                 </svg> -->
@@ -885,7 +885,7 @@
   <script type="text/javascript">
     var mapOptions = {
         center: new naver.maps.LatLng(37.56168740564802, 126.853134044059),
-        zoom: 17
+        zoom: 16
     };
     
     var map = new naver.maps.Map('map', mapOptions);
@@ -967,23 +967,23 @@
     //   var scrollPosition = window.pageYOffset;
     //   console.log("현재 스크롤 위치: " + scrollPosition);
     // })
+    const mapDiv = document.getElementById("map");
+    mapDiv.style.pointerEvents = 'none';
+    const icon = document.getElementById('lockicon');
+
 
     function disableClick() {
-      const mapDiv = document.getElementById("map");
-      const icon = document.getElementById('lockicon');
 			mapDiv.style.pointerEvents = ((mapDiv.style.pointerEvents === "none") ? "auto" : "none");
 
       console.log(icon.classList);
       console.log(icon.classList.contains('bi-lock'));
 
       if (icon.classList.contains('bi-lock')){
-        console.log('d1');
         icon.classList.remove('bi-lock');
         icon.classList.add('bi-unlock');
       } else {
-          console.log('d2');
-            icon.classList.remove('bi-unlock');
-            icon.classList.add('bi-lock');
+        icon.classList.remove('bi-unlock');
+        icon.classList.add('bi-lock');
         }
 		}
 
