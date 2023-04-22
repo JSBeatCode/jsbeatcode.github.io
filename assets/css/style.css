@@ -1390,6 +1390,18 @@ section {
   padding: 5px;
 }
 
+#maplockicon {
+  position: absolute;
+  top: 7%;
+  right: 0%;
+  z-index: 1009;
+  padding: 5px;
+}
+
+#lockicon {
+  font-size: 30px;
+}
+
 #calendar-div {
   border: 1px solid lightpink;
   padding: 10px;
@@ -1620,8 +1632,8 @@ section {
 
 #contact-account-box-subtitle {
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: 1.0em;
-  padding-left: 15px;
+  font-size: 0.8em;
+  padding-left: 12px;
 }
 
 #contact-pink-box-up {
@@ -1687,7 +1699,8 @@ section {
   position: absolute;
   left: 5%;
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
+  font-size: 1.0em;
 }
 
 #contact-account-li-button {
@@ -1707,4 +1720,15 @@ section {
 
 .border-pink {
   border: 2px solid #ffe6ff;
+}
+
+.parentdiv {
+    position: relative;
+}
+
+.childdiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
